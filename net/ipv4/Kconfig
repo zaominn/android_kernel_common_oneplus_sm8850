@@ -679,6 +679,16 @@ config TCP_CONG_BBR
 	  AQM schemes that do not provide a delay signal. It requires the fq
 	  ("Fair Queue") pacing packet scheduler.
 
+config TCP_CONG_BRUTAL
+	tristate "Brutal TCP congestion control"
+	default n
+	help
+
+	  TCP Brutal is Hysteria's congestion control algorithm ported to TCP,
+	  as a Linux kernel module. For further details see:
+	    https://github.com/apernet/tcp-brutal
+
+
 choice
 	prompt "Default TCP congestion control"
 	default DEFAULT_CUBIC

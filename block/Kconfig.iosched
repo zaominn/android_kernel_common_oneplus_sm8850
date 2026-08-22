@@ -45,3 +45,7 @@ config BFQ_CGROUP_DEBUG
 	files in a cgroup which can be useful for debugging.
 
 endmenu
+
+config MQ_IOSCHED_ADIOS
+	tristate "Adaptive I/O scheduler (ADIOS)"
+	default y
